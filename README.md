@@ -1,143 +1,159 @@
-# 🐍 The Basilisk's Path – Snake Movement Engine
+## 🐍 The Basilisk's Path – A Slytherin-Themed Snake Game
 
-## 📌 Project Overview
+## Project Overview
+**The Basilisk's Path** is a themed Snake Game built using **Python Turtle Graphics** and **Object-Oriented Programming (OOP)** principles.
+Inspired by the hidden chambers beneath Hogwarts, the player guides the Basilisk through the arena while collecting energy fragments and avoiding collisions with walls and its own body.
 
-**The Basilisk's Path** is the movement engine for a classic Snake Game built using **Python Turtle Graphics** and **Object-Oriented Programming (OOP)** principles.
-
-This version focuses on implementing the **core snake movement system**, including keyboard control, segment-follow logic, and smooth animation updates.
-
-It serves as the foundation for future features like:
-
-* Food system
-* Score tracking
-* Collision detection
-* Snake growth mechanics
-* Game over logic
+This project demonstrates how a classic arcade mechanic can be transformed into a narrative-driven mini game using clean Python architecture.
 
 ---
 
-## 🧠 Concepts Practiced
+### Concepts Practiced
 
-This project demonstrates the following programming concepts:
+This project demonstrates:
 
 * Object-Oriented Programming (OOP)
-* Class creation and initialization
-* Lists storing object instances
-* Keyboard event handling
-* Screen animation loop
-* Coordinate-based movement logic
-* Preventing reverse-direction movement (classic Snake rule)
+* Class-based game architecture
+* Event-driven keyboard input handling
+* Screen animation loops using Turtle Graphics
+* Segment-follow movement logic
+* Dynamic object spawning (food system)
+* Collision detection (wall + self)
+* State-based gameplay flow
+* Intro screen trigger system
+* Score tracking with real-time updates
 
 ---
 
-## 📁 Project Structure
+### Project Structure
 
-### main.py
+main.py
+Controls:
 
+* Game window setup
+* Intro screen trigger (Press SPACE to begin)
+* Main animation loop
+* Collision detection logic
+* Player input handling
+
+snake.py
+Handles:
+
+* Snake body creation
+* Segment-follow movement logic
+* Direction control
+* Reverse-movement prevention
+* Snake growth mechanics
+
+food.py
 Responsible for:
 
-* Creating the game window
-* Running the animation loop
-* Listening for keyboard input
-* Updating the screen continuously
+* Randomized food spawning
+* Position refresh after collection
 
-### snake.py
+scoreboard.py
+Displays:
 
-Contains the `Snake` class which handles:
-
-* Creating the snake body
-* Moving the snake forward
-* Updating segment positions
-* Managing direction controls
-* Preventing reverse turns
+* Basilisk Power score
+* Game-over message
+* Themed UI text rendering
 
 ---
 
-## 🎮 Controls
+### Controls
 
-| Key           | Action     |
-| ------------- | ---------- |
-| ↑ Up Arrow    | Move Up    |
-| ↓ Down Arrow  | Move Down  |
-| ← Left Arrow  | Move Left  |
-| → Right Arrow | Move Right |
+| Key   | Action         |
+| ----- | -------------- |
+| ↑     | Move Up        |
+| ↓     | Move Down      |
+| ←     | Move Left      |
+| →     | Move Right     |
+| SPACE | Begin the game |
 
-Reverse movement is blocked to maintain authentic Snake gameplay behavior.
-
----
-
-## ⚙️ How Movement Works
-
-Each frame of the game loop:
-
-1. The screen refreshes
-2. Each segment moves to the position of the segment ahead
-3. The head moves forward by a fixed distance
-4. Keyboard input updates direction safely
-
-This creates a smooth snake-following motion effect.
+Reverse movement is blocked to preserve classic Snake gameplay behavior.
 
 ---
 
-## 🚀 How to Run the Project
+### Gameplay Features Implemented
+
+✔ Intro screen with start trigger
+
+✔ Smooth snake movement system
+
+✔ Snake growth after consuming food
+
+✔ Real-time score tracking ("Basilisk Power")
+
+✔ Wall collision detection
+
+✔ Self-collision detection
+
+✔ Themed Game Over screen
+
+✔ Slytherin-inspired visual palette
+
+✔ Clean modular OOP structure
+
+---
+
+### Theme & Atmosphere
+
+The game reimagines the classic Snake experience through a **Slytherin-inspired aesthetic**, featuring:
+
+* Dark emerald chamber background
+* Silver-toned UI text
+* Basilisk-themed narrative elements
+* Immersive start screen ritual
+* Story-style game-over message:
+
+  “The Chamber Falls Silent”
+
+---
+
+### How to Run the Project
 
 Make sure Python 3 is installed.
 
-Run the program using:
+Run:
 
-```
 python main.py
-```
 
-Use the arrow keys to control the snake.
+Press **SPACE** to awaken the Basilisk and begin gameplay.
 
-Click anywhere inside the window to exit the game.
-
----
-
-## 🛠 Features Implemented
-
-✔ Snake body creation
-
-✔ Continuous movement loop
-
-✔ Keyboard direction control
-
-✔ Reverse-direction prevention logic
-
-✔ Segment-follow animation system
-
-✔ Clean OOP-based structure
+Use arrow keys to navigate.
 
 ---
 
-## 📈 Planned Enhancements
+### Planned Enhancements
 
-Upcoming upgrades for the full Snake Game:
+Future upgrades may include:
 
-* Food spawning system
-* Scoreboard implementation
-* Snake length increase after eating food
-* Wall collision detection
-* Self-collision detection
-* Game restart functionality
+* Restart-game functionality
+* Sound effects
+* Difficulty scaling (speed increase)
+* High-score tracking
+* Themed collectible variations
+* Animated intro sequence
 
 ---
 
-## 🎯 Learning Outcome
+### Learning Outcome
 
 By building this project, you practice:
 
-* Structuring game logic using classes
-* Managing multiple object instances
-* Implementing real-time keyboard input
-* Designing animation loops with Turtle graphics
-* Preparing scalable architecture for game expansion
-
-This project forms the movement backbone of a complete Snake Game.
+* Designing modular game architecture
+* Managing real-time movement systems
+* Implementing collision detection
+* Structuring multi-file Python projects
+* Creating interactive UI using Turtle graphics
+* Transforming classic mechanics into themed gameplay experiences
 
 ---
 
-## Tech Stack
+### Tech Stack
 
 Python (Intermediate Level)
+
+Python (Turtle Graphics)
+
+Object-Oriented Programming (OOP)
